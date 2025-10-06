@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      width: 300px;
+      position: relative;
+    }
+
+    .elementsuntoldcoding::before {
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: calc(50% - 50px);
+      width: 100px;
+      height: 100px;
+      background: url('Untold-Coding.png') no-repeat center/cover;
+      border-radius: 12px;
+    }
+
+    .elementsname {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .elementcontent {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .elementcontent input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .elementcontent button {
+      padding: 10px;
+      background: #4caf50;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .elementcontent button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="elementsuntoldcoding"></div>
+    <div class="elementsname">
+      <h2>Login Page</h2>
+    </div>
+    <div class="elementcontent">
+      <form action="#">
+        <input type="text" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
